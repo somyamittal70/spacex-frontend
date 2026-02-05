@@ -1,0 +1,490 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+}
+
+/* NAVBAR */
+.navbar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 0 0 0 60px;
+    display: flex;
+    align-items: center;
+    z-index: 10;
+}
+
+.logo img {
+    width: 130px;
+    height: 45px;
+}
+
+.navbar nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #f3efefd6;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    opacity: 0.9;
+}
+
+.hero {
+    position: relative;
+    height: 950px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+nav a:hover {
+    opacity: 1;
+}
+
+/* VIDEO */
+.hero-video {
+    position: absolute;
+    top: 55%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    z-index: 1;
+    overflow: hidden;
+}
+
+/* DARK OVERLAY */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+/* CONTENT */
+.hero-content {
+    color: #fff;
+    z-index: 1;
+    line-height: 1.2;
+    margin-top: 20px;
+}
+
+.hero-content h1 {
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: left;
+}
+
+.hero-content h1 span {
+    font-weight: 600;
+}
+
+.hero-content p {
+    margin: 20px 0;
+    font-size: 16px;
+}
+
+.btn {
+    padding: 12px 25px;
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background: #fff;
+    color: #000;
+}
+
+body {
+    font-family: 'D-DIN', sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'D-DIN', sans-serif;
+    font-weight: 700;
+}
+
+.explore {
+    margin-top: 40px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    top: 0;
+    width: 90%;
+    padding: 20px 160px;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    z-index: 5;
+}
+
+.nav-links a {
+    font-size: 14px;
+    letter-spacing: 1.2px;
+}
+
+.hero {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    padding: 50px;
+    color: #fff;
+    margin: 20px;
+    margin-bottom: 30px;
+}
+
+/* Dark overlay like first image */
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to right,
+        rgba(0,0,0,0.2),
+        rgba(0,0,0,0.65)
+    );
+    z-index: 1;
+}
+
+/* Explore Section */
+.explore {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 80px;
+    color: white;
+    background-image: url("explore_image.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Dark overlay */
+.explore::before {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    z-index: 1;
+}
+
+/* Content */
+.explore-content {
+    position: relative;
+    z-index: 2;
+    max-width: 680px;
+    margin-bottom: 300px;
+}
+
+/* Heading */
+.explore-content h1 {
+    font-size: 52px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+/* Paragraph */
+.explore-content p {
+    font-size: 15px;
+    line-height: 1.6;
+    opacity: 0.9;
+    margin-bottom: 30px;
+}
+
+/* Button */
+.learn-more-btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 22px 20px;
+    background: rgba(69, 65, 65, 0.733);
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    border-radius: 4px;
+    gap: 10px;
+    transition: background 0.3s ease;
+}
+
+.learn-more-btn:hover {
+    background: rgb(243, 239, 239);
+    color: #000;
+}
+
+.ride {
+    position: relative;
+    height: 150vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    color: #fff;
+    overflow: hidden;
+}
+
+/* VIDEO (Right side) */
+.ride-video {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    opacity: 0.7;
+    width: 130%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+    overflow: hidden;
+}
+
+/* DARK OVERLAY */
+.video-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to right,
+        rgba(0,0,0,0.85),
+        rgba(0,0,0,0.2)
+    );
+    z-index: 1;
+}
+
+/* CONTENT */
+.ride-content {
+    position: relative;
+    z-index: 2;
+    align-items: center;
+    margin-left: 250px;
+    margin-bottom: 200px;
+}
+
+.ride-content h1 {
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.ride-content h1 span {
+    font-weight: 600;
+}
+
+.ride-content p {
+    margin: 18px 0;
+    font-size: 16px;
+}
+
+/* BUTTON */
+.btnn {
+    padding: 12px 25px;
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btnn:hover {
+    background: #fff;
+    color: #000;
+}
+
+/* Mission Section */
+.mission {
+    position: relative;
+    width: 100%;
+    height: 110vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: white;
+    padding-right: 10px;
+    background-image: url("mission_image.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.9;
+}
+
+/* Dark overlay */
+.mission::before {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    z-index: 1;
+}
+
+/* Content */
+.mission-content {
+    position: relative;
+    z-index: 2;
+    max-width: 680px;
+}
+
+/* Heading */
+.mission-content h1 {
+    font-size: 52px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+/* Paragraph */
+.mission-content p {
+    font-size: 15px;
+    line-height: 1.6;
+    opacity: 0.9;
+    margin-bottom: 30px;
+}
+
+/* Button */
+.join-a-mission-btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 22px 20px;
+    background: rgba(69, 65, 65, 0.733);
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    border-radius: 4px;
+    gap: 10px;
+    transition: background 0.3s ease;
+}
+
+.join-a-mission-btn:hover {
+    background: rgb(243, 239, 239);
+    color: #000;
+}
+
+/* Starlink Section */
+.starlink {
+    position: relative;
+    width: 100%;
+    height: 110vh;
+    display: flex;
+    align-items: center;
+    color: white;
+    padding-right: 10px;
+    background-image: url("earth_image.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.9;
+}
+
+/* Dark overlay */
+.starlink::before {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    z-index: 1;
+}
+
+/* Content */
+.starlink-content {
+    position: relative;
+    z-index: 2;
+    max-width: 680px;
+    margin-left: 70px;
+    margin-bottom: 200px;
+}
+
+/* Heading */
+.starlink-content h1 {
+    font-size: 52px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+/* Paragraph */
+.starlink-content p {
+    font-size: 15px;
+    line-height: 1.6;
+    opacity: 0.9;
+    margin-bottom: 30px;
+}
+
+/* Button */
+.order-now-btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 22px 20px;
+    background: rgba(69, 65, 65, 0.733);
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    border-radius: 4px;
+    gap: 10px;
+    transition: background 0.3s ease;
+}
+
+.order-now-btn:hover {
+    background: rgb(243, 239, 239);
+    color: #000;
+}
+.footer {
+    position: relative;
+    background-color: #000;
+    margin: 12px 60px;
+    padding: 20px 0;
+}
+
+/* NAV LINKS */
+.footer-nav {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.footer-nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.75rem;
+    font-family: 'D-DIN', sans-serif;
+}
+
+/* COPYRIGHT TEXT */
+.footer-text {
+    position: absolute;
+    right: 2%;
+    top: 50%;
+    transform: translateY(-50%);   
+}
+
+.footer-text p {
+    font-size: 0.75rem;
+    color: #ffffff;
+}
+
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero {
+        justify-content: center;
+        padding: 30px;
+        text-align: center;
+    }
+
+    .hero-content h1 {
+        font-size: 32px;
+    }
+}
