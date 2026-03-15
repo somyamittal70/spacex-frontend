@@ -104,7 +104,7 @@ input[type="radio"] {
 .reusable-content,
 .starbase-content {
     position: absolute;
-    bottom: 50%;
+    bottom: 45%;
     left: 60px;
     max-width: 600px;
     line-height: 1.2;
@@ -165,7 +165,7 @@ hr {
 }
 
 
-/* active dots */
+/*-----------active dots-------------*/
 #c1:checked ~ .dots label[for="c1"],
 #c2:checked ~ .dots label[for="c2"],
 #c3:checked ~ .dots label[for="c3"],
@@ -179,3 +179,39 @@ hr {
 #c11:checked ~ .dotssss label[for="c11"]  {
     background: #fff;
 }
+
+/* ---------FOOTER--------- */
+.footer {
+    position: relative;
+    background-color: #000;
+    margin: 12px 60px;
+    padding: 20px 0;
+}
+
+/* NAV LINKS */
+.footer-nav {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.footer-nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.75rem;
+    font-family: 'D-DIN', sans-serif;
+}
+
+/* COPYRIGHT TEXT */
+.footer-text {
+    position: absolute;
+    right: 2%;
+    top: 50%;
+    transform: translateY(-50%);   
+}
+
+.footer-text p {
+    font-size: 0.75rem;
+    color: #ffffff;
+}
+

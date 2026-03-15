@@ -36,6 +36,32 @@ body {
     opacity: 0.9;
 }
 
+      /* SUBMENU */
+.submenu {
+  list-style: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #111;
+  min-width: 160px;
+  display: none;
+}
+
+.submenu li a {
+  padding: 10px 15px;
+  white-space: nowrap;
+}
+
+/* SHOW ON HOVER */
+.dropdown:hover .submenu {
+  display: block;
+}
+
+/* OPTIONAL HOVER EFFECT */
+.submenu li a:hover {
+  background: #222;
+}
+
 .hero {
     position: relative;
     height: 950px;
@@ -440,6 +466,7 @@ h1, h2, h3 {
     background: rgb(243, 239, 239);
     color: #000;
 }
+
 .footer {
     position: relative;
     background-color: #000;
